@@ -12,7 +12,7 @@ export default function Analytics() {
     <p className='text-xs text-transform: uppercase text-col m-2'>Analytics</p>
     <h1 className='text-3xl font-extrabold m-2'> Built-In Analytics To Track Your Nfts</h1>
     <p className='m-4 text-xs'>Use our built-in analytics dashboard to pull valuable insights and monitor the value of your Krypto portfolio over time.</p>
-    <Button className='mt-5'>View our pricing</Button>
+    <Button className='mt-5 bg-purple'>View our pricing</Button>
     </div>
 
 
