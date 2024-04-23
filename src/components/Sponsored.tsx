@@ -4,14 +4,20 @@ import { Carousel, CarouselContent, CarouselItem } from './ui/carousel'
 
 export default function Sponsored() {
   return (
-    <div>
-        <p> Featured on</p>
-        <div className='flex flex-row m-4 gap-x-5'>
-           <Carousel className='bg-gray-800'>
-           <CarouselContent>
+    <div >
+        <p className='ml-5 '> Featured on</p>
 
-            <CarouselItem className='basis-1/4'>
-            <img src='/techcrunch.png'width={80} height={80} />
+        <div className='flex flex-row m-6 gap-x-5'>
+           <Carousel 
+           opts={{
+            align: "start",
+            loop: true
+           }}
+           className='bg-gray-800 w-full max-w-sm rounded-md border-4'>
+           <CarouselContent className=' flex flex-row rounded-3xl items-center'>
+
+            <CarouselItem className='basis-1/4 pl-4 '>
+            <img src='/techcrunch.png'width={200} height={80} />
             </CarouselItem>
 
             <CarouselItem className='basis-1/4'>
@@ -19,7 +25,7 @@ export default function Sponsored() {
             </CarouselItem>
 
             <CarouselItem className='basis-1/4'>
-            <img src='/mit.png'width={30} height={30} />
+            <img src='/mit.png'width={40} height={30} />
             </CarouselItem>
 
             <CarouselItem className='basis-1/4'>

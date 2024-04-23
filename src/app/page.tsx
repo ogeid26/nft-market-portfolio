@@ -1,4 +1,5 @@
 import Analytics from "@/components/Analytics";
+import Billboard from "@/components/Billboard";
 import CallToAction from "@/components/CallToAction";
 import Greeter from "@/components/Greeter";
 import Sponsored from "@/components/Sponsored";
@@ -7,8 +8,8 @@ import React from "react";
 
 export default function page() {
   return (
-    <>
-      <div className="bg-[#010922] flex flex-col items-center p-3 m-3 text-white">
+      <div className="bg-gradient-to-r from-slate-500 to-indigo-900">
+      <div className=" flex flex-col items-center text-white max-w-md mx-auto md:max-w-3xl">
 
         <div className="">
           <Greeter />
@@ -30,7 +31,12 @@ export default function page() {
           <Testimonials/>
         </div>
 
+
+        <div>
+          <Billboard/>
+        </div>
+
       </div>
-    </>
+      </div>
   );
 }

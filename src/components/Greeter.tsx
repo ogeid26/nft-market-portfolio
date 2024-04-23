@@ -5,24 +5,27 @@ import Image from "next/image";
 export default function Greeter() {
   return (
     <>
-      <div className="flex flex-rows m-5 ">
-        <div>
-          <div className=" m-4 text-5xl font-bold text-white antialiased">
-          <h1>  Discover </h1>
-          <h1>And</h1>
-          <h1>Collect</h1>
-          <h1>Rare NFTs</h1>
-          </div>
-          <p className="text-white m-4">
-            The most secure marketplace for buyingand selling unique crypto
+      <div className="flex flex-col m-5 sm:flex-row ">
+
+        <div className=" m-4  text-white antialiased">
+          <h1 className="text-5xl font-bold">
+            {" "}
+            Discover and collect Rare NFTs{" "}
+          </h1>
+          <p className="text-white mt-4 text-sm ">
+            The most secure marketplace for buying and selling unique crypto
             assets.
           </p>
         </div>
-        <Image src={"/monitor.png"} width={300} height={300} alt="logo" />
-      </div>
 
-      <Button className="m-3">Buy NFTs</Button>
-      <Button className="m-3">Sell NFTs</Button>
+        <div className="m-4">
+          <img src={"/monitor.png"} width={500} height={300} alt="A screen" />
+        </div>
+      </div>
+      <div className=" container mx-auto flex flex-row items-center justify-center">
+      <Button className="text-transform: uppercase font-medium m-3 text-xs  bg-[#8080D7]">Buy NFTs</Button>
+      <Button className="m-3 font-bold">Sell NFTs</Button>
+      </div>
     </>
   );
 }
