@@ -3,8 +3,8 @@ import { Button } from "./ui/button";
 
 export default function Billboard() {
   return (
-    <div w-full>
-    <div className="flex flex-col items-center bg-gradient-to-r from-indigo-400 to-yellow-100 rounded-xl shadow-md">
+    <div w-full >
+    <div className="  p-4 m-7 md:m-2 flex flex-col items-center bg-gradient-to-r from-indigo-400 to-yellow-100 rounded-xl shadow-md">
         <div className="p-3 flex flex-col items-center place-content-center">
           <div>
             <p className="font-bold text-xs text-black text-transform: uppercase">

@@ -23,7 +23,7 @@ export default function Greeter() {
         </div>
       </div>
       <div className=" container mx-auto flex flex-row items-center justify-center">
-      <Button className="text-transform: uppercase font-medium m-3 text-xs  bg-[#8080D7]">Buy NFTs</Button>
+      <Button className="text-transform: uppercase font-medium m-3 text-xs border-0 bg-[#8080D7]">Buy NFTs</Button>
       <Button className="m-3 font-bold">Sell NFTs</Button>
       </div>
     </>
